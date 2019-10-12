@@ -3,7 +3,7 @@ if ($_SERVER['REQUEST_METHOD'] =='POST') {
 	# code...
 
 	
-	$id=$_POST['nik'];
+	$id=$_POST['id_umkm'];
 	$photo=$_POST['photo'];
 
 
@@ -12,9 +12,9 @@ if ($_SERVER['REQUEST_METHOD'] =='POST') {
 	require_once 'connect.php';
 
 	$path = "image/$id.jpg";
-	$finalPath="http://192.168.43.157/simadesa/apps/".$path;
+	$finalPath="http://192.168.137.141/simadesa/apps/".$path;
 
-	$sql ="update tbl_umkm set image='$finalPath' where nik='$id'";
+	$sql ="update tbl_umkm set image='$finalPath' where id_umkm='$id'";
 
 
 	if (mysqli_query($connn,$sql)) {
