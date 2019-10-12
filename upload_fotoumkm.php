@@ -12,7 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] =='POST') {
 	require_once 'connect.php';
 
 	$path = "image/$id.jpg";
-	$finalPath="http://192.168.137.141/simadesa/apps/".$path;
+	$finalPath="http://app.desa-babakanasem.id/".$path;
 
 	$sql ="update tbl_umkm set image='$finalPath' where id_umkm='$id'";
 
