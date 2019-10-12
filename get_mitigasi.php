@@ -24,7 +24,7 @@ if ($_SERVER['REQUEST_METHOD']=='POST') {
 			"id_mitigasi":"'.str_replace($char,'`',strip_tags($row['id_mitigasi'])).'", 
 			"nama_lokasi":"'.str_replace($char,'`',strip_tags($row['nama_lokasi'])).'",
 			"lat":"'.str_replace($char,'`',strip_tags($row['lat'])).'",
-			"lon":"'.str_replace($char,'`',strip_tags($row['lon'])).'",
+			"lng":"'.str_replace($char,'`',strip_tags($row['lng'])).'",
 			"keterangan":"'.str_replace($char,'`',strip_tags($row['keterangan'])).'"
 		},';
 	}
