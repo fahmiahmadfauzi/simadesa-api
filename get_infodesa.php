@@ -5,7 +5,7 @@ if ($_SERVER['REQUEST_METHOD']=='POST') {
 
 	require_once 'connect.php';
 
-	$sql = "select * from tbl_info ORDER BY id_info asc";
+	$sql = "select * from tbl_info ORDER BY id_info desc";
 
 	$response = mysqli_query($connn,$sql);
 
