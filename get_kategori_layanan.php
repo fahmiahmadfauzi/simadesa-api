@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD']=='POST') {
 		$json .= 
 		'{
 			"id_kategori":"'.str_replace($char,'`',strip_tags($row['id_kategori'])).'", 
-			"nama_pelayanan":"'.str_replace($char,'`',strip_tags($row['nama_pelayanan'])).'",
+			"nama_layanan":"'.str_replace($char,'`',strip_tags($row['nama_layanan'])).'",
 			"keterangan":"'.str_replace($char,'`',strip_tags($row['keterangan'])).'"
 			
 			
