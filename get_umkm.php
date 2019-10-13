@@ -5,7 +5,7 @@ if ($_SERVER['REQUEST_METHOD']=='POST') {
 
 	require_once 'connect.php';
 
-	$sql = "select * from tbl_umkm um JOIN tbl_penduduk pe ORDER BY id_umkm asc";
+	$sql = "select * from tbl_umkm a JOIN tbl_penduduk b ON b.nik=a.nik ORDER BY id_umkm DESC";
 
 	$response = mysqli_query($connn,$sql);
 
