@@ -5,7 +5,7 @@ if ($_SERVER['REQUEST_METHOD']=='POST') {
 
 	require_once 'connect.php';
 
-	$sql = "select * from tbl_umkm ORDER BY id_umkm asc";
+	$sql = "select * from tbl_umkm um JOIN tbl_penduduk pe ORDER BY id_umkm asc";
 
 	$response = mysqli_query($connn,$sql);
 
@@ -24,6 +24,7 @@ if ($_SERVER['REQUEST_METHOD']=='POST') {
 			"nik":"'.str_replace($char,'`',strip_tags($row['nik'])).'",
 			"nama_usaha":"'.str_replace($char,'`',strip_tags($row['nama_usaha'])).'",
 			"deskripsi":"'.str_replace($char,'`',strip_tags($row['deskripsi'])).'",
+			"kontak":"'.str_replace($char,'`',strip_tags($row['kontak'])).'",
 			"image":"'.str_replace($char,'`',strip_tags($row['image'])).'"
 			
 			
